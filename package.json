@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "description": "wikitext abstract syntax tree",
+  "license": "MIT",
+  "keywords": [],
+  "repository": "jqhoogland/wtast",
+  "author": "Jesse Hoogland <jesse@jessehoogland.com> (jessehoogland.com)",
+  "contributors": [
+    "Jesse Hoogland <jesse@jessehoogland.com> (jessehoogland.com)",
+    "Titus Wormer <tituswormer@gmail.com> (wooorm.com)",
+    "Eugene Sharygin <eush77@gmail.com>"
+  ],
+  "devDependencies": {
+    "remark-cli": "^10.0.0",
+    "remark-preset-wooorm": "^9.0.0"
+  },
+  "scripts": {
+    "format": "remark . -qfo",
+    "test": "npm run format"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm"
+    ]
+  }
+}
