@@ -227,6 +227,8 @@ Add an extra colon to ''link'' to a category in line
 without causing the page to be listed in the category:
 [[:Category:English documentation]]
 
+Oh, and links can blend: San Francisco also has [[public transport]]ation.
+
 ```
 
 Here's a link to a page named [Official position](https://meta.wikimedia.org/wiki/Official_positions). Capitalization does not matter in the first letter, as in [official positions](https://meta.wikimedia.org/wiki/Official_positions).
@@ -239,6 +241,12 @@ This is a [piped link](https://meta.wikimedia.org/wiki/Help:Piped_link). It lets
  - [Boston](https://en.wikipedia.org/wiki/Boston,_South_Australia)
 
 
+Oh, and links can blend: San Francisco also has [public transportation](https://en.wikipedia.org/wiki/Public_transport).
+
+#### Special Links
+- To a different language in the same wiki space: `[[es:Plancton]]`
+- To a different wiki space: `[[Wiktionary:fr:bonjour]]`
+- To a category `[[Category:Category name]]` (hidden), `[[:Category:Character sets]]` (=[Category:Category sets]()), or `[[:Category:Character sets|]]` (=[Category sets]()).
 ### External Links
 
 ```
@@ -265,6 +273,7 @@ Or leave the title blank: [[1](http://wikipedia.org)]
 
 External link can be used to link to a wiki page that cannot be linked to with [[page]]: http://meta.wikimedia.org/w/index.php?title=Fotonotes&oldid=482030#Installation
 
+> Note: This supports various URI schemes (`https`, `mailto`, `ftp`, etc.) 
 
 ### Redirects
 
@@ -400,23 +409,28 @@ Templates are sections of wikitext that are surrounded by double braces`{{templa
 Allowed HTML tags included:
 - `<br>` for line breaks
 - `<pre>`, `<kbd>` & `<code>`: For `monospace` text
-- `<s>`, `<u>`, `<span style="font-variant:small-caps">`: ~~strike out~~, <u>underline</u>, or <small>SMALL CAPS</small>
+- `<s>`/`<del>`, `<u>`, `<small>`, & `<big>`  ~~strike out~~, <u>underline</u>, <small>small</small>, & <big>big</big> 
 - `<sup>` & `<sub>`: superscripts & subscripts
-- `<div style="text-align: center;">` for centered text
 - `<mark>` for text <mark>highligting</mark>
 - `<blockquote>` for blockquotes
 - `<!--...-->` for comments
-- `<span style="...">` for miscellaneous styling
+- `<span style="...">` and `<div style="...">` for miscellaneous styling
 
 There are also custom tags (mentioned above):
 - [`<ref>` and `<references>`](#footnotes))
 - [`<nowiki>`](#escaping)
 - [`<gallery>`](#images)
 - [`<math>`](#math)
-
+- [`<poem>`](https://en.wikipedia.org/wiki/Help:Wikitext#H:POEM) takes an optional `lang` attribute
+- [`<syntaxhighlighting>`](dfn-code)
+- [`<hiero>`](https://en.wikipedia.org/wiki/Help:WikiHiero_syntax)
+- [`<score>`](https://en.wikipedia.org/wiki/Help:Score)
 
 ## Other
-- Dates like `[[1969-07-20]]`, `[[July 20]]`, `[[1969]]`, and `[[20 July]] [[1969]]` are formatted according to the user's preferences.
+- Like markdown, newlines don't affect layout. Separate paragraphs with one (or more) empty line.
+- Dates like `[[1969-07-20]]`, `[[July 20]]`, `[[1969]]`, and `[[20 July]] [[1969]]` are formatted according to the user's preferences. 
+- [Table of contents](https://en.wikipedia.org/wiki/Help:Wikitext#Table_of_contents) can be created with `__FORCETOC__`, `__TOC__`, `__NOTOC__` 
+
 
 ### Signatures
 
@@ -426,8 +440,9 @@ These are used on internal talk pages to sign comments.
 - `~~~~` (name + date/time): [Example](https://meta.wikimedia.org/wiki/User:Example) 07:46, 10 July 2022 (UTC)
 - `~~~~~` (date/time): 07:46, 10 July 2022 (UTC)
 
-Like markdown, newlines don't affect layout. Separate paragraphs with one (or more) empty line.
+### Special characters
 
+See the collection on the [wikitext help page](https://en.wikipedia.org/wiki/Help:Wikitext#Special_characters).
 
 <!-- Definitions -->
 
